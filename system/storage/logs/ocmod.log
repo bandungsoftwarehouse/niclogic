@@ -1,0 +1,155 @@
+2015-08-16 16:06:03 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+LINE: 32
+LINE: 40
+LINE: 64
+LINE: 81
+LINE: 92
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Automatic image manager for Opencart 2.0.2.0
+FILE: admin/controller/catalog/product.php
+CODE: if (isset($this->request->post['image']))
+LINE: 738
+CODE: if (isset($this->request->post['model']))
+LINE: 759
+CODE: if (isset($this->request->post['product_image']))
+LINE: 1245
+CODE: $this->load->model('catalog/download');
+LINE: 1273
+REGEX: /\$this->response->setOutput\(json_encode\(\$json\)\);\s*}/m
+LINE: 1491
+FILE: admin/model/catalog/product.php
+CODE: $product_id = $this->db->getLastId();
+LINE: 10
+REGEX: /\$data\['image']\) \. "' WHERE product_id = '" \. \(int\)\$product_id \. "'"\);\s*}\s*foreach \(\$data\['product_description'/m
+LINE: 14
+CODE: date_modified = NOW() WHERE product_id = '" . (int)$product_id . "'");
+LINE: 136
+REGEX: /\$this->db->escape\(\$data\['image']\) \. "' WHERE product_id = '" \. \(int\)\$product_id \. "'"\);\s*}\s*\$this->db->query\("DELETE FROM " \. DB_PREFIX \. "product_description/m
+LINE: 140
+REGEX: /}\s*}\s*\$this->db->query\("DELETE FROM " \. DB_PREFIX \. "product_image/m
+LINE: 200
+REGEX: /}\s*}\s*\$this->db->query\("DELETE FROM " \. DB_PREFIX \. "product_to_download/m
+LINE: 205
+CODE: pre.admin.product.delete', $product_id);
+LINE: 320
+REGEX: /layout_id = '" \. \(int\)\$layout_id \. "'"\);\s*return \$query->row\['total'];\s*\}/m
+LINE: 703
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-image">
+LINE: 99
+REGEX: /id="input-image" \/>\s*<\/div>/m
+LINE: 103
+REGEX: /<\?php\s+echo\s+\$image;\s+\?>/m
+LINE: 103
+REGEX: /<\?php\s+echo\s+\$thumb;\s+\?>/m
+LINE: 102
+REGEX: /<\?php\s+\$image_row = 0;\s+\?>/m
+LINE: 836
+REGEX: /<\?php \$image_row\+\+; \?>\s*<\?php } \?>/m
+LINE: 843
+CODE: addImage();
+LINE: 870
+CODE: <script type="text/javascript"><!--
+LINE: 1049
+----------------------------------------------------------------
+2015-08-16 16:23:53 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 39
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+LINE: 32
+LINE: 40
+LINE: 64
+LINE: 81
+LINE: 92
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 25
+LINE: 31
+----------------------------------------------------------------
+MOD: Automatic image manager for Opencart 2.0.2.0
+FILE: admin/controller/catalog/product.php
+CODE: if (isset($this->request->post['image']))
+LINE: 738
+CODE: if (isset($this->request->post['model']))
+LINE: 759
+CODE: if (isset($this->request->post['product_image']))
+LINE: 1245
+CODE: $this->load->model('catalog/download');
+LINE: 1273
+REGEX: /\$this->response->setOutput\(json_encode\(\$json\)\);\s*}/m
+LINE: 1491
+FILE: admin/model/catalog/product.php
+CODE: $product_id = $this->db->getLastId();
+LINE: 10
+REGEX: /\$data\['image']\) \. "' WHERE product_id = '" \. \(int\)\$product_id \. "'"\);\s*}\s*foreach \(\$data\['product_description'/m
+LINE: 14
+CODE: date_modified = NOW() WHERE product_id = '" . (int)$product_id . "'");
+LINE: 136
+REGEX: /\$this->db->escape\(\$data\['image']\) \. "' WHERE product_id = '" \. \(int\)\$product_id \. "'"\);\s*}\s*\$this->db->query\("DELETE FROM " \. DB_PREFIX \. "product_description/m
+LINE: 140
+REGEX: /}\s*}\s*\$this->db->query\("DELETE FROM " \. DB_PREFIX \. "product_image/m
+LINE: 200
+REGEX: /}\s*}\s*\$this->db->query\("DELETE FROM " \. DB_PREFIX \. "product_to_download/m
+LINE: 205
+CODE: pre.admin.product.delete', $product_id);
+LINE: 320
+REGEX: /layout_id = '" \. \(int\)\$layout_id \. "'"\);\s*return \$query->row\['total'];\s*\}/m
+LINE: 703
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <label class="col-sm-2 control-label" for="input-image">
+LINE: 99
+REGEX: /id="input-image" \/>\s*<\/div>/m
+LINE: 103
+REGEX: /<\?php\s+echo\s+\$image;\s+\?>/m
+LINE: 103
+REGEX: /<\?php\s+echo\s+\$thumb;\s+\?>/m
+LINE: 102
+REGEX: /<\?php\s+\$image_row = 0;\s+\?>/m
+LINE: 836
+REGEX: /<\?php \$image_row\+\+; \?>\s*<\?php } \?>/m
+LINE: 843
+CODE: addImage();
+LINE: 870
+CODE: <script type="text/javascript"><!--
+LINE: 1049
+----------------------------------------------------------------
+MOD: Installation without FTP settings
+FILE: admin/controller/extension/installer.php
+CODE: $data['button_continue'] =
+LINE: 27
+CODE: function ftp(
+LINE: 296
+CODE: if (!$this->config->get('config_ftp_status')
+LINE: 315
+FILE: admin/language/english/extension/installer.php
+CODE: $_['text_clear']
+LINE: 17
+FILE: admin/view/template/extension/installer.tpl
+CODE: <form class="form
+LINE: 40
+CODE: timer = setInterval(
+LINE: 94
+CODE: n next()
+LINE: 164
+CODE: 'path=' + data.path
+LINE: 175
+----------------------------------------------------------------
